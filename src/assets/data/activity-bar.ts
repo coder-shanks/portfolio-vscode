@@ -1,32 +1,34 @@
-import filesIcon from '@/assets/icons/files.svg';
-import extensionsIcon from '@/assets/icons/extensions.svg';
-import sourceControlIcon from '@/assets/icons/source-control.svg';
-import blogsIcon from '@/assets/icons/blogs.svg';
-import searchIcon from '@/assets/icons/search.svg';
-import settingsIcon from '@/assets/icons/settings-gear.svg';
+import {
+  BlogsIcon,
+  ExtensionsIcon,
+  FilesIcon,
+  SourceControlIcon,
+  SearchIcon,
+  SettingsIcon,
+} from '@/components/icons';
 
 type ACTIVITY_BAR_ICON = {
-  modulePath: any;
+  SvgIcon: any;
   altDesc: string;
   routePath: string;
 };
 
 const ACTIVITY_BAR_ICONS: ACTIVITY_BAR_ICON[] = [
-  { modulePath: filesIcon, altDesc: 'Home page', routePath: '/' },
+  { SvgIcon: FilesIcon, altDesc: 'Home page', routePath: '/' },
   {
-    modulePath: extensionsIcon,
+    SvgIcon: ExtensionsIcon,
     altDesc: 'Open-source contributions page',
     routePath: '/github',
   },
   {
-    modulePath: sourceControlIcon,
+    SvgIcon: SourceControlIcon,
     altDesc: 'Projects page',
     routePath: '/projects',
   },
-  { modulePath: blogsIcon, altDesc: 'Blogs page', routePath: '/blogs' },
-  { modulePath: searchIcon, altDesc: 'Socials page', routePath: '/socials' },
+  { SvgIcon: BlogsIcon, altDesc: 'Blogs page', routePath: '/blogs' },
+  { SvgIcon: SearchIcon, altDesc: 'Socials page', routePath: '/socials' },
   {
-    modulePath: settingsIcon,
+    SvgIcon: SettingsIcon,
     altDesc: 'Settings page',
     routePath: '/settings',
   },

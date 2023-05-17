@@ -1,11 +1,13 @@
-import htmlFileIcon from '@/assets/icons/file-type-html.svg';
-import cssFileIcon from '@/assets/icons/file-type-css.svg';
-import jsFileIcon from '@/assets/icons/file-type-js.svg';
-import reactFileIcon from '@/assets/icons/file-type-reactjs.svg';
-import jsonFileIcon from '@/assets/icons/file-type-json.svg';
+import {
+  FileCssIcon,
+  FileHtmlIcon,
+  FileJsIcon,
+  FileJsonIcon,
+  FileReactIcon,
+} from '@/components/icons';
 
 type SIDEBAR_ICON = {
-  modulePath: any;
+  SvgIcon: any;
   title: string;
   altDesc: string;
   routePath: string;
@@ -13,31 +15,31 @@ type SIDEBAR_ICON = {
 
 const SIDEBAR_ICONS: SIDEBAR_ICON[] = [
   {
-    modulePath: htmlFileIcon,
+    SvgIcon: FileHtmlIcon,
     title: 'index.html',
     altDesc: 'Home page',
     routePath: '/',
   },
   {
-    modulePath: cssFileIcon,
+    SvgIcon: FileCssIcon,
     title: 'github.css',
     altDesc: 'Open-source contributions page',
     routePath: '/github',
   },
   {
-    modulePath: jsFileIcon,
+    SvgIcon: FileJsIcon,
     title: 'projects.js',
     altDesc: 'Projects page',
     routePath: '/projects',
   },
   {
-    modulePath: jsonFileIcon,
+    SvgIcon: FileJsonIcon,
     title: 'blogs.json',
     altDesc: 'Blogs page',
     routePath: '/blogs',
   },
   {
-    modulePath: reactFileIcon,
+    SvgIcon: FileReactIcon,
     title: 'socials.tsx',
     altDesc: 'Socials page',
     routePath: '/socials',

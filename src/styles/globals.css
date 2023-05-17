@@ -5,6 +5,7 @@
 :root {
   --primary-bg: #23272e;
   --primary-text: #d7dae0;
+  --primary-inactive: #6b717d;
   --statusBar-bg: #1e2227;
   --statusBar-text: #abb2bf;
 }

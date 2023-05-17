@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import Image from 'next/image';
-
-import arrowDownIcon from '@/assets/icons/chevron-down.svg';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { SIDEBAR_ICONS } from '@/assets/data/sidebar';
+import ArrowDownIcon from './icons/ArrowDown';
 
 export default function SideBar() {
+  const router = useRouter();
   const [showFiles, setShowFiles] = useState(true);
 
   return (
@@ -14,9 +16,8 @@ export default function SideBar() {
         className="flex bg-[var(--primary-bg)] gap-1 px-3 py-1 hover:cursor-pointer"
         onClick={() => setShowFiles(!showFiles)}
       >
-        <Image
+        <ArrowDownIcon
           className={`transition-transform ${showFiles ? '' : '-rotate-90'}`}
-          src={arrowDownIcon}
           alt="Show or hide files"
           width={16}
           height={16}
@@ -26,19 +27,23 @@ export default function SideBar() {
       {showFiles ? (
         <div className="flex flex-col">
           {SIDEBAR_ICONS.map((icon, idx) => (
-            <div
+            <Link
               key={idx}
-              className="py-1 flex items-center px-3 gap-2 hover:bg-[var(--primary-bg)] hover:cursor-pointer"
+              href={icon.routePath}
+              className={`py-1 flex items-center px-3 gap-2 hover:bg-[var(--primary-bg)] hover:cursor-pointer ${
+                router.pathname === icon.routePath
+                  ? 'bg-[var(--primary-bg)]'
+                  : ''
+              }`}
             >
-              <Image
+              <icon.SvgIcon
                 className="pt-0.5"
-                src={icon.modulePath}
                 alt={icon.altDesc}
                 width={16}
                 height={20}
               />
               <div className="text-sm">{icon.title}</div>
-            </div>
+            </Link>
           ))}
         </div>
       ) : null}
