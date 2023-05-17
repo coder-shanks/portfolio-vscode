@@ -8,8 +8,9 @@ export default function ActivityBar() {
       {ACTIVITY_BAR_ICONS.map((icon, idx) => (
         <div
           key={idx}
-          className="p-3"
-          //   className="border-l-2 border-l-[var(--primary-text)] mt-auto"
+          className={`p-3 hover:cursor-pointer ${
+            idx === 0 ? 'border-l-2 border-l-[var(--primary-text)]' : ''
+          }${idx === 5 ? 'mt-auto' : ''}`}
         >
           <Image src={icon.modulePath} alt={icon.altDesc} />
         </div>
