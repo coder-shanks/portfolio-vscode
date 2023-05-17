@@ -11,7 +11,7 @@ export default function SideBar() {
 
   return (
     <div className="w-72 bg-[var(--statusBar-bg)]">
-      <div className="h-8 px-3 pt-2 text-xs uppercase">Explorer</div>
+      <div className="h-10 px-3 pt-3 text-xs uppercase">Explorer</div>
       <div
         className="flex bg-[var(--primary-bg)] gap-1 px-3 py-1 hover:cursor-pointer"
         onClick={() => setShowFiles(!showFiles)}
