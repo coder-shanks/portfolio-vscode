@@ -10,7 +10,7 @@ import settingsIcon from '../assets/icons/settings-gear.svg';
 export default function ActivityBar() {
   return (
     <div className="flex flex-col items-center w-12">
-      <div className="p-3 border-l-2 border-l-[var(--main-foreground)] ">
+      <div className="p-3 border-l-2 border-l-[var(--primary-text)] ">
         <Image src={filesIcon} alt="About page" />
       </div>
       <div className="p-3">

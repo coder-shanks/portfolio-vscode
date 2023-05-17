@@ -3,15 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --main-background: #23272e;
-  --main-foreground: #d7dae0;
-  --sideBar-background: #1e2227;
-  --sideBar-foreground: #abb2bf;
-  --statusBar-background: #1e2227;
-  --statusBar-foreground: #9da5b4;
+  --primary-bg: #23272e;
+  --primary-text: #d7dae0;
+  --statusBar-bg: #1e2227;
+  --statusBar-text: #abb2bf;
 }
 
 body {
-  color: var(--main-foreground);
-  background-color: var(--main-background);
+  color: var(--primary-text);
+  background-color: var(--primary-bg);
 }

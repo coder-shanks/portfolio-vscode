@@ -9,13 +9,13 @@ import jsonFileIcon from '@/assets/icons/file-type-json.svg';
 
 export default function SideBar() {
   return (
-    <div className="w-72 bg-[var(--sideBar-background)]">
+    <div className="w-72 bg-[var(--statusBar-bg)]">
       <div className="h-8 px-3 pt-2 text-xs uppercase">Explorer</div>
-      <div className="text-[11px] px-3 py-1 font-bold uppercase bg-[var(--main-background)]">
+      <div className="text-[11px] px-3 py-1 font-bold uppercase bg-[var(--primary-bg)]">
         portfolio-vscode
       </div>
       <div className="flex flex-col">
-        <div className="py-1 flex items-center px-3 gap-2 hover:bg-[var(--main-background)] hover:cursor-pointer">
+        <div className="py-1 flex items-center px-3 gap-2 hover:bg-[var(--primary-bg)] hover:cursor-pointer">
           <Image
             className="pt-0.5"
             src={htmlFileIcon}
@@ -25,7 +25,7 @@ export default function SideBar() {
           />
           <div className="text-sm">about.html</div>
         </div>
-        <div className="py-1 flex items-center px-3 gap-2 hover:bg-[var(--main-background)] hover:cursor-pointer">
+        <div className="py-1 flex items-center px-3 gap-2 hover:bg-[var(--primary-bg)] hover:cursor-pointer">
           <Image
             className="pt-0.5"
             src={cssFileIcon}
@@ -35,7 +35,7 @@ export default function SideBar() {
           />
           <div className="text-sm">github.css</div>
         </div>
-        <div className="py-1 flex items-center px-3 gap-2 hover:bg-[var(--main-background)] hover:cursor-pointer">
+        <div className="py-1 flex items-center px-3 gap-2 hover:bg-[var(--primary-bg)] hover:cursor-pointer">
           <Image
             className="pt-0.5"
             src={jsFileIcon}
@@ -45,7 +45,7 @@ export default function SideBar() {
           />
           <div className="text-sm">projects.js</div>
         </div>
-        <div className="py-1 flex items-center px-3 gap-2 hover:bg-[var(--main-background)] hover:cursor-pointer">
+        <div className="py-1 flex items-center px-3 gap-2 hover:bg-[var(--primary-bg)] hover:cursor-pointer">
           <Image
             className="pt-0.5"
             src={jsonFileIcon}
@@ -55,7 +55,7 @@ export default function SideBar() {
           />
           <div className="text-sm">blogs.json</div>
         </div>
-        <div className="py-1 flex items-center px-3 gap-2 hover:bg-[var(--main-background)] hover:cursor-pointer">
+        <div className="py-1 flex items-center px-3 gap-2 hover:bg-[var(--primary-bg)] hover:cursor-pointer">
           <Image
             className="pt-0.5"
             src={reactFileIcon}
