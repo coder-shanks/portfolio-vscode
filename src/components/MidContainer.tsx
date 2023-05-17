@@ -1,3 +1,3 @@
 export default function MidContainer() {
-  return <div className="flex w-full h-6 bg-[var(--statusBar-bg)]"></div>;
+  return <div className="flex flex-grow p-4">Content here</div>;
 }
