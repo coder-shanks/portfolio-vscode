@@ -2,14 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import { ACTIVITY_BAR_ICONS } from '@/assets/data/activity-bar';
+import { ACTIVITY_BAR_TABS } from '@/assets/data/activity-bar-tabs';
 
 export default function ActivityBar() {
   const router = useRouter();
 
   return (
     <div className="flex flex-col items-center w-12">
-      {ACTIVITY_BAR_ICONS.map((icon, idx) => (
+      {ACTIVITY_BAR_TABS.map((icon, idx) => (
         <Link
           key={idx}
           href={icon.routePath}

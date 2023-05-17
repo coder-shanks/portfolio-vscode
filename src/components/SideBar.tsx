@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { SIDEBAR_ICONS } from '@/assets/data/sidebar';
+import { OPENED_FILES } from '@/assets/data/opened-files';
 import ArrowDownIcon from './icons/ArrowDown';
 
 export default function SideBar() {
@@ -26,7 +26,7 @@ export default function SideBar() {
       </div>
       {showFiles ? (
         <div className="flex flex-col">
-          {SIDEBAR_ICONS.map((icon, idx) => (
+          {OPENED_FILES.map((icon, idx) => (
             <Link
               key={idx}
               href={icon.routePath}

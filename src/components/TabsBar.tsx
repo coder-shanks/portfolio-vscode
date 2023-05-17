@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import { SIDEBAR_ICONS } from '@/assets/data/sidebar';
+import { OPENED_FILES } from '@/assets/data/opened-files';
 
 export default function TabsBar() {
   const router = useRouter();
 
   return (
     <div className="flex h-10 bg-[var(--statusBar-bg)]">
-      {SIDEBAR_ICONS.map((icon, idx) => (
+      {OPENED_FILES.map((icon, idx) => (
         <Link
           key={idx}
           href={icon.routePath}

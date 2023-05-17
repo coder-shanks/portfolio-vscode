@@ -7,13 +7,13 @@ import {
   SettingsIcon,
 } from '@/components/icons';
 
-type ACTIVITY_BAR_ICON = {
+type ACTIVITY_BAR_TAB = {
   SvgIcon: any;
   altDesc: string;
   routePath: string;
 };
 
-const ACTIVITY_BAR_ICONS: ACTIVITY_BAR_ICON[] = [
+const ACTIVITY_BAR_TABS: ACTIVITY_BAR_TAB[] = [
   { SvgIcon: FilesIcon, altDesc: 'Home page', routePath: '/' },
   {
     SvgIcon: ExtensionsIcon,
@@ -34,4 +34,4 @@ const ACTIVITY_BAR_ICONS: ACTIVITY_BAR_ICON[] = [
   },
 ];
 
-export { ACTIVITY_BAR_ICONS };
+export { ACTIVITY_BAR_TABS };

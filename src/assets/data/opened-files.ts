@@ -6,14 +6,14 @@ import {
   FileReactIcon,
 } from '@/components/icons';
 
-type SIDEBAR_ICON = {
+type OPENED_FILE = {
   SvgIcon: any;
   title: string;
   altDesc: string;
   routePath: string;
 };
 
-const SIDEBAR_ICONS: SIDEBAR_ICON[] = [
+const OPENED_FILES: OPENED_FILE[] = [
   {
     SvgIcon: FileHtmlIcon,
     title: 'index.html',
@@ -46,4 +46,4 @@ const SIDEBAR_ICONS: SIDEBAR_ICON[] = [
   },
 ];
 
-export { SIDEBAR_ICONS };
+export { OPENED_FILES };
