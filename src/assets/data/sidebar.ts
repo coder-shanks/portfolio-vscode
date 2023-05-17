@@ -8,18 +8,40 @@ type SIDEBAR_ICON = {
   modulePath: any;
   title: string;
   altDesc: string;
+  routePath: string;
 };
 
 const SIDEBAR_ICONS: SIDEBAR_ICON[] = [
-  { modulePath: htmlFileIcon, title: 'about.html', altDesc: 'About page' },
+  {
+    modulePath: htmlFileIcon,
+    title: 'index.html',
+    altDesc: 'Home page',
+    routePath: '/',
+  },
   {
     modulePath: cssFileIcon,
     title: 'github.css',
     altDesc: 'Open-source contributions page',
+    routePath: '/github',
   },
-  { modulePath: jsFileIcon, title: 'projects.js', altDesc: 'Projects page' },
-  { modulePath: jsonFileIcon, title: 'blogs.json', altDesc: 'Blogs page' },
-  { modulePath: reactFileIcon, title: 'socials.tsx', altDesc: 'Socials page' },
+  {
+    modulePath: jsFileIcon,
+    title: 'projects.js',
+    altDesc: 'Projects page',
+    routePath: '/projects',
+  },
+  {
+    modulePath: jsonFileIcon,
+    title: 'blogs.json',
+    altDesc: 'Blogs page',
+    routePath: '/blogs',
+  },
+  {
+    modulePath: reactFileIcon,
+    title: 'socials.tsx',
+    altDesc: 'Socials page',
+    routePath: '/socials',
+  },
 ];
 
 export { SIDEBAR_ICONS };
